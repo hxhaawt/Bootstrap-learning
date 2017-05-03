@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<!--<link href="../bootstrap.css" rel="stylesheet">-->
+	<!--<link href="../bootstrap.min.css" rel="stylesheet">-->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+	<form role="form">
+		<div class="form-group">
+			<label>input data:</label>
+			<input type="text" class="form-control">
+			<textarea class="form-control" rows="5">Hello</textarea>
+		</div>
+	
+		<br/>
+		<div class="form-group">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" value="apple">apple
+				</label>
+			</div>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" value="banana">banana
+				</label>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<div class="radio">
+				<label>
+					<input type="radio" name="op-select" value="girl">girl
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="op-select" value="boy">boy
+				</label>
+			</div>
+		</div>
+		
+		<select class="form-control" multiple>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+		</select>
+		<br/>
+		<select class="form-control" >
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+		</select>
+		<br/>
+		<p class="form-control-static">请按照我的格式输入: hello@126.com</p>
+	
+		<input type="text" class="form-control" placeholder="hello" disabled>
+	
+	</form>
+
+	<br/>
+	<p>下面这个表单都是不可选的</p>
+	<form role="form">
+		<fieldset disabled>
+			<div class="form-group">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" value="apple">apple
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" value="banana">banana
+					</label>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="radio">
+					<label>
+						<input type="radio" name="op-select" value="girl">girl
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="op-select" value="boy">boy
+					</label>
+				</div>
+			</div>
+			
+			<select class="form-control" multiple>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select>
+			<br/>
+			<select class="form-control" >
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select>
+		</fieldset>
+	</form>
+
+	<form role="form">
+		
+		<div class="form-group has-error">
+			<label>用户名:</label>
+			<input type="text" class="form-control">
+		</div>
+		
+		<div class="form-group has-success">
+			<label>用户名:</label>
+			<input type="text" class="form-control">
+		</div>
+		
+		<div class="form-group has-warning">
+			<label>用户名:</label>
+			<input type="text" class="form-control">
+		</div>
+		
+		<div class="form-group has-success has-feedback">
+			<label class="control-label">Input with success</label>
+			<input type="text" class="form-control">
+			<span class="glyphicon glyphicon-ok form-control-feedback"></span>
+		</div>
+		
+		<div class="form-group has-success has-feedback">
+			<label class="control-label" for="inputSuccess2">Input with success</label>
+			<input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+			<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+			<span id="inputSuccess2Status" class="sr-only">(success)</span>
+		</div>
+		
+		<div class="form-group has-warning has-feedback col-md-4">
+			<label class="control-label" for="inputWarning2">Input with warning</label>
+			<input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+			<span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+			<span id="inputWarning2Status" class="sr-only">(warning)</span>
+		</div>
+		
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

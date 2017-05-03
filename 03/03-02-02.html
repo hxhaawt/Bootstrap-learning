@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link href="../bootstrap.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container">
+		<ul id="my-nav-tab" class="nav nav-tabs" role="tablist">
+			<li class="active" role="presentation"><a href="">one</a></li>
+			<li role="presentation"><a href="">two</a></li>
+			<li role="presentation"><a href="">three</a></li>
+		</ul>
+	</div>
+	
+	<br/>
+	<div class="container">
+		<ul id="my-nav-tab2" class="nav nav-pills" role="tablist">
+			<li class="active" role="presentation"><a href="">one</a></li>
+			<li role="presentation"><a href="">two</a></li>
+			<li role="presentation"><a href="">three</a></li>
+		</ul>
+	</div>
+	
+	<br/>
+	<div class="container">
+		<ul id="my-nav-tab3" class="nav nav-pills nav-stacked" role="tablist">
+			<li class="active" role="presentation"><a href="">one</a></li>
+			<li role="presentation"><a href="">two</a></li>
+			<li role="presentation"><a href="">three</a></li>
+		</ul>
+	</div>
+	<br/>
+	<div class="container">
+		<ul id="my-nav-tab4" class="nav nav-tabs nav-stacked" role="tablist">
+			<li class="active" role="presentation"><a href="">one</a></li>
+			<li role="presentation"><a href="">two</a></li>
+			<li role="presentation"><a href="">three</a></li>
+		</ul>
+	</div>
+	
+	<br/>
+	<div class="container">
+		<ul id="my-nav-tab5" class="nav nav-pills nav-justified" role="tablist">
+			<li class="active" role="presentation"><a href="">one</a></li>
+			<li role="presentation" class="dropdown">
+				<a href="" class="dropdown-toggle" data-toggle="dropdown">
+					two
+				<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+					<li role="presentation"><a role="menuitem" tabindex="-1">hello1</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1">hello2</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1">hello3</a></li>
+					<li role="presentation"><a role="menuitem" tabindex="-1">hello4</a></li>
+				</ul>
+			</li>
+			<li role="presentation" class="disabled"><a href="">three</a></li>
+		</ul>
+	</div>
+	
+	
+	
+	
+	<script src="../jquery-3.1.1.min.js"></script>
+	<script src="../bootstrap.js"></script>
+	<script>
+//		$("#my-nav-tab a").on("click", function (even) {
+//			even.preventDefault();
+//			$(this).tab("show");
+//		});
+//
+//		$("#my-nav-tab2 a").click(function (even) {
+//			even.preventDefault()
+//			$(this).tab("show");
+//		});
+		
+		$("ul>li> a").click(function (even) {
+			even.preventDefault();
+			$(this).tab("show");
+		});
+		
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
