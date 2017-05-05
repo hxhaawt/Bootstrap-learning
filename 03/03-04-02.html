@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link href="../bootstrap.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container">
+		<a href="#">短信消息<span class="badge">30</span></a>
+		<button type="button" class="btn btn-success">
+			Message <span class="badge">100</span>
+		</button>
+	</div>
+
+	<ul class="nav nav-pills" role="rablist">
+		<li class="active" role="presentation"><a href="">Home<span class="badge">10</span></a></li>
+		<li role="presentation"><a href="">Profile<span class="badge">100</span></a></li>
+		<li role="presentation"><a href="">Message<span class="badge">50</span></a></li>
+	</ul>
+	
+	<div class="jumbotron">
+		<div class="container">
+			<h1>Hello, world</h1>
+			<p>welcome here every body.</p>
+			<p>
+				<a class="btn btn-info btn-lg" href="#">Learn more</a>
+			</p>
+		</div>
+	</div>
+		
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Hello, world</h1>
+			<p>welcome here every body.</p>
+			<p>
+				<a class="btn btn-info btn-lg" href="#">Learn more</a>
+			</p>
+		</div>
+	</div>
+	
+	
+	
+	<script src="../jquery-3.1.1.min.js"></script>
+	<script src="../bootstrap.js"></script>
+	<script>
+		$("ul>li> a").click(function (even) {
+			even.preventDefault();
+			$(this).tab("show");
+		});
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
