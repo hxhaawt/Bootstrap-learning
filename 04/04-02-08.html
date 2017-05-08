@@ -2,9 +2,70 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>$Title$</title>
+	<title>弹出框</title>
+	<link href="../bootstrap.css" rel="stylesheet">
+	<style>
+		body{
+			margin-top: 50px;
+		}
+	</style>
 </head>
 <body>
-$END$
+
+	<div class="container">
+		<a type="button" class="btn btn-default js-popover" data-placement="left" data-toggle="popover" title="标题"
+		        data-content="这里是内容" data-trigger="focus">
+			弹出框
+		</a>
+		<a type="button" class="btn btn-default js-popover" data-placement="right" data-toggle="popover" title="标题"
+		        data-content="这里是内容" data-animation="false">
+			弹出框
+		</a>
+		<a type="button" class="btn btn-default js-popover" data-placement="top" data-toggle="popover" title="标题"
+		   data-content="这里是内容">
+			弹出框
+		</a>
+		<a type="button" class="btn btn-default js-popover" data-placement="bottom" data-toggle="popover" title="标题"
+		   data-content="这里是内容">
+			弹出框
+		</a>
+	</div>
+ 
+
+	<script src="../jquery-3.1.1.min.js"></script>
+	<script src="../bootstrap.js"></script>
+	<script>
+		$(".js-popover").popover();
+//		$(".js-popover").popover("show");
+		
+		$(".js-popover").on("hidden.bs.popover", function () {
+			alert("hello");
+		});
+	
+	</script>
+
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

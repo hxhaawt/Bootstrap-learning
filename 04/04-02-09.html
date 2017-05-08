@@ -2,9 +2,64 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>$Title$</title>
+	<title>警告信息</title>
+	<link href="../bootstrap.css" rel="stylesheet">
 </head>
 <body>
-$END$
+
+	<div class="container">
+		<div class="alert alert-info fade in" id="myalert">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>极客学院</strong>欢迎您的到来
+			<button type="button" class="btn btn-default">
+				详情
+			</button>
+		</div>
+		
+		<div class="alert alert-info fade in">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<strong>极客学院</strong>欢迎您的到来
+		</div>
+	</div>
+	
+
+
+
+
+	<script src="../jquery-3.1.1.min.js"></script>
+	<script src="../bootstrap.js"></script>
+	<script>
+		
+//		$("#myalert").alert("close");
+
+		$("#myalert").on("close.bs.alert", function () {
+			alert("hello1");
+		});
+
+		$("#myalert").on("closed.bs.alert", function () {
+			alert("hello2");
+		});
+		
+	</script>
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

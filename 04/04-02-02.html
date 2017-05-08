@@ -2,9 +2,55 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>$Title$</title>
+	<title>过渡效果</title>
+	<link href="../bootstrap.css" rel="stylesheet">
+	<style>
+		#my-div{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			
+			 -webkit-transition: width 2s;
+				-moz-transition: width 2s;
+			     -ms-transition: width 2s;
+			      -o-transition: width 2s;
+				     transition: width 2s;
+		}
+		#my-div:hover{
+			width: 400px;
+		}
+	</style>
 </head>
 <body>
-$END$
+
+	<div id="my-div">
+		
+	</div>
+
+
+
+	<script>
+		document.getElementById("my-div").addEventListener("transitionend", function (event) {
+			this.innerHTML = "过渡事件触发--过渡已经完成"
+		});
+	</script>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

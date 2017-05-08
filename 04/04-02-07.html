@@ -2,9 +2,66 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>$Title$</title>
+	<title>工具提示</title>
+	<link href="../bootstrap.css" rel="stylesheet">
+	<style>
+		body{
+			margin-top: 30px;
+		}
+		
+		p{
+			margin-bottom: 30px;
+		}
+		
+	</style>
 </head>
 <body>
-$END$
+
+	<div class="container">
+		<p class="muted">
+			欢迎来到<a id="mytooltip" href="#" data-toggle="tooltip" title="" data-placement="top" data-original-title="www.jikexueyuan.com">极客学院</a>，这里能学到很多东西。
+		</p>
+		<p class="muted">
+			欢迎来到<a href="#" data-toggle="tooltip" title="title" data-placement="left" data-original-title="www.jikexueyuan.com">极客学院</a>，这里能学到很多东西。
+		</p>
+	</div>
+
+
+	<script src="../jquery-3.1.1.min.js"></script>
+	<script src="../bootstrap.js"></script>
+	<script>
+		$("[data-toggle='tooltip']").tooltip();
+		
+//		$("[data-toggle='tooltip']").tooltip("show");
+		
+		$("a[data-toggle='tooltip']").on("hidden.bs.tooltip", function () {
+			alert("hello");
+		});
+		
+	</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

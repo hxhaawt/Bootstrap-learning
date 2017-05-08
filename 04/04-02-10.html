@@ -2,9 +2,87 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>$Title$</title>
+	<title>Title</title>
+	<link href="../bootstrap.css" rel="stylesheet">
 </head>
 <body>
-$END$
+	
+	<div class="container">
+		<button type="button" data-loading-text="loading..." class="btn btn-primary js-loading-btn">
+			loading status
+		</button>
+		
+		<button type="button" data-loading-text="loading..." class="btn btn-default" data-toggle="button" autocomplete="off">
+			loading status
+		</button>
+		
+		<div class="btn-group" data-toggle="buttons">
+			
+			<label class="btn btn-primary active">
+				<input type="checkbox" autocomplete="off" checked>选择1
+			</label>
+			<label class="btn btn-primary">
+				<input type="checkbox" autocomplete="off">选择2
+			</label>
+			<label class="btn btn-primary">
+				<input type="checkbox" autocomplete="off" >选择3
+			</label>
+		</div>
+		
+		<div class="btn-group" data-toggle="buttons">
+			<label class="btn btn-primary active">
+				<input type="radio" name="options" autocomplete="off" checked>单选1
+			</label>
+			<label class="btn btn-primary ">
+				<input type="radio" name="options" autocomplete="off" >单选2
+			</label>
+			<label class="btn btn-primary ">
+				<input type="radio" name="options" autocomplete="off" >单选3
+			</label>
+		</div>
+		
+		<button type="button" data-complete-text="finish" class="btn btn-default my-btn" autocomplete="off">
+			hello
+		</button>
+	</div>
+
+
+	<script src="../jquery-3.1.1.min.js"></script>
+	<script src="../bootstrap.js"></script>
+	<script>
+		$(".js-loading-btn").on("click", function () {
+			var btn = $(this).button("loading");
+			setTimeout(function (e) {
+				btn.button("reset");
+			}, 3000);
+		});
+		
+		$(".my-btn").on("click", function () {
+			$(this).button("complete");
+		});
+		
+	</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

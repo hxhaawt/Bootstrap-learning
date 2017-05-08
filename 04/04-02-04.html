@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>$Title$</title>
+	<title>下拉菜单</title>
+	<link href="../bootstrap.css" rel="stylesheet">
 </head>
 <body>
-$END$
+
+	<div id="my-dropdown" class="container">
+		 <div class="dropdown">
+			 <button type="button" class="btn btn-default" data-toggle="dropdown">
+				 下拉菜单
+				 <span class="caret"></span>
+			 </button>
+			 <ul class="dropdown-menu" role="menu">
+				 <li>--1--</li>
+				 <li>--2--</li>
+				 <li>--3--</li>
+				 <li>--4--</li>
+				 <li>--5--</li>
+			 </ul>
+		 </div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<script src="../jquery-3.1.1.min.js"></script>
+	<script src="../bootstrap.js"></script>
+	<script>
+		$("#my-dropdown").on("hide.bs.dropdown", function (event) {
+			alert("hello");
+		})
+	</script>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

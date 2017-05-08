@@ -2,9 +2,109 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>$Title$</title>
+	<title>标签页</title>
+	<link href="../bootstrap.css" rel="stylesheet">
 </head>
 <body>
-$END$
+
+	<div class="container">
+		<ul id="myTab" class="nav nav-tabs">
+			<li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+			<li ><a href="#profile" data-toggle="tab">Profile</a></li>
+			<li class="dropdown">
+				<a href="#" id="myTabdrop1" class="dropdown-toggle" data-toggle="dropdown">下拉菜单
+					<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#one" tabindex="-1" data-toggle="tab">one</a></li>
+					<li><a href="#two" tabindex="-1" data-toggle="tab">two</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div id="myTabContent" class="tab-content" >
+			<div id="home" class="tab-pane fade in active">
+				<p>hello man, welcome here</p>
+				<p>hello man, welcome here</p>
+				<p>hello man, welcome here</p>
+				<p>hello man, welcome here</p>
+				<p>hello man, welcome here</p>
+				<p>hello man, welcome here</p>
+				<p>hello man, welcome here</p>
+			</div>
+			
+			<div id="profile" class="tab-pane fade">
+				<p>hello girl, welcome here</p>
+				<p>hello girl, welcome here</p>
+				<p>hello girl, welcome here</p>
+				<p>hello girl, welcome here</p>
+				<p>hello girl, welcome here</p>
+				<p>hello girl, welcome here</p>
+				<p>hello girl, welcome here</p>
+			</div>
+			
+			<div id="one" class="tab-pane fade">
+				<p>hello one, welcome here</p>
+				<p>hello girl, welcome here</p>
+				<p>hello girl, welcome here</p>
+				<p>hello girl, welcome here</p>
+				<p>hello girl, welcome here</p>
+				<p>hello girl, welcome here</p>
+				<p>hello girl, welcome here</p>
+			</div>
+			<div id="two" class="tab-pane">
+				<p>hello two, welcome here</p>
+				<p>hello girl, welcome here</p>
+				<p>hello girl, welcome here</p>
+				<p>hello girl, welcome here</p>
+				<p>hello girl, welcome here</p>
+				<p>hello girl, welcome here</p>
+				<p>hello girl, welcome here</p>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+	<script src="../jquery-3.1.1.min.js"></script>
+	<script src="../bootstrap.js"></script>
+	<script>
+		
+		$("#myTab li:first a").tab("show");
+		
+//		$("#myTab a:last").tab("show");
+		
+//		$("#myTab li:eq(1) a").tab("show");
+		
+//		$("a[data-toggle='tab']").on("show.bs.tab", function () {
+//			alert("hello");
+//		});
+	</script>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
