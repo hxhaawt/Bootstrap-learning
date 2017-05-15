@@ -10,18 +10,20 @@ $(document).ready(function () {
 
     function initScroll() {
 
-            // $(".side-nav ul.nav-side-nav a:eq(index)").addClass("my-scroll");
-            // $(".side-nav ul.nav-side-nav a").not("a:eq(index)").removeClass("my-scroll");
-            // $(".side-nav ul.nav-side-nav a:gt(0)").removeClass("my-scroll");
-            // $(".side-nav ul.nav-side-nav a:lt(0)").removeClass("my-scroll");
+        function scrollAddClass(n) {
 
-        var firstPageHeight     = 820;
-        var secondPageHeight    = 700;
-        var threePageHeight     = 800;
-        var fourPageHeight      = 700;
-        var fivePageHeight      = 800;
+            $(".side-nav ul.nav-side-nav a:eq(" + n + ")").addClass("my-scroll");
+            $(".side-nav ul.nav-side-nav a").not("a:eq(" + n + ")").removeClass("my-scroll");
+        }
 
-        var scrollDiffVal = 5;
+        var firstPageHeight, secondPageHeight, threePageHeight, fourPageHeight, fivePageHeight;
+        firstPageHeight = 820;
+        secondPageHeight = 700;
+        threePageHeight = 800;
+        fourPageHeight = 700;
+        fivePageHeight = 800;
+
+        var scrollDiffVal = 10;
 
         var firstPageBottomHeight = firstPageHeight;
         var secondPageBottomHeight = firstPageBottomHeight + secondPageHeight;
@@ -29,36 +31,29 @@ $(document).ready(function () {
         var fourPageBottomHeight = threePageBottomHeight + fourPageHeight;
         var fivePageBottomHeight = fourPageBottomHeight + fivePageHeight;
 
-        var t = document.documentElement.scrollTop || document.body.scrollTop;  //获取距离页面顶部的距离
+        var t;
+        t = document.documentElement.scrollTop || document.body.scrollTop;  //获取距离页面顶部的距离
         if ( t < firstPageBottomHeight-scrollDiffVal){
 
-            $(".side-nav ul.nav-side-nav a:eq(0)").addClass("my-scroll");
-            $(".side-nav ul.nav-side-nav a").not("a:eq(0)").removeClass("my-scroll");
+            scrollAddClass(0);
         }
         // else if( t > firstPageBottomHeight-5 && t < secondPageBottomHeight-5) {
         else if(t < secondPageBottomHeight-scrollDiffVal) {
 
-            $(".side-nav ul.nav-side-nav a:eq(1)").addClass("my-scroll");
-            $(".side-nav ul.nav-side-nav a").not("a:eq(1)").removeClass("my-scroll");
+            scrollAddClass(1);
         // } else if (t > secondPageBottomHeight-scrollDiffVal && t < threePageBottomHeight-scrollDiffVal){
         } else if (t < threePageBottomHeight-scrollDiffVal){
 
-            $(".side-nav ul.nav-side-nav a:eq(2)").addClass("my-scroll");
-            $(".side-nav ul.nav-side-nav a").not("a:eq(2)").removeClass("my-scroll");
+            scrollAddClass(2);
         // }else if (t > threePageBottomHeight && t < fourPageBottomHeight){
         }else if (t < fourPageBottomHeight-scrollDiffVal){
 
-            $(".side-nav ul.nav-side-nav a:eq(3)").addClass("my-scroll");
-            $(".side-nav ul.nav-side-nav a:gt(3)").removeClass("my-scroll");
-            $(".side-nav ul.nav-side-nav a:lt(3)").removeClass("my-scroll");
+            scrollAddClass(3);
         // }else if ( t > fourPageBottomHeight){
         }else{
 
-            $(".side-nav ul.nav-side-nav a:eq(4)").addClass("my-scroll");
-            $(".side-nav ul.nav-side-nav a:gt(4)").removeClass("my-scroll");
-            $(".side-nav ul.nav-side-nav a:lt(4)").removeClass("my-scroll");
+            scrollAddClass(4);
         }
-
     }
 
     function myScroll() {
